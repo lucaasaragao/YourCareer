@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/*@import url('');*/
+/* CSS Document */
+
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Initial*/
+
+body {
+    min-height: 100vh;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*Open*/
+
+.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.open .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    animation: open 1s ease-in-out forwards;
+}
+
+.open .layer:nth-child(1) {
+    background: #000;
+    z-index: 2;
+}
+
+.open .layer:nth-child(2) {
+    background: #C53B67;
+    animation-delay: 1s;
+    z-index: 1;
+}
+
+@keyframes open {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+
+}
+
+/*Section*/
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 700px;
+}
+
+.banner h2,
+h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transform-origin: left;
+    text-transform: uppercase;
+    transform: scaleX(0);
+    animation: revealTextReverse 1s ease-in-out forwards;
+}
+
+.banner h2 {
+    font-size: 6em;
+    animation-delay: 2s;
+}
+
+.banner h3 {
+    font-size: 3em;
+    animation-delay: 3s;
+}
+
+.banner h2:before,
+h3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #C53B67;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    animation: revealText 1s ease-in-out forwards;
+    animation-delay: 3s;
+    /*Não sei como isso ta funcionando, mas ta*/
+}
+
+.banner h3::before {
+    animation-delay: 4s;
+}
+
+
+@keyframes revealText {
+    0% {
+        transform: scaleX(1);
+        /*Diferença do X é que o X trata posições verticais*/
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes revealTextReverse {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.banner p {
+    opacity: 0;
+    font-weight: 400;
+    font-size: 1.3em;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.banner a {
+    opacity: 0;
+    display: inline-block;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    background: #C53B67;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    animation: fadeInBottom 0.5s linear forwards;
+    animation-delay: 5.5s;
+}
+
+@keyframes fadeInBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.imagem {
+    opacity: 0;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+
+}
+
+.nav-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    padding: 0 10%;
+    z-index: 100%;
+    background-color: #C53B67
+}
+
+.sociais {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sociais li {
+    opacity: 0;
+    list-style: none;
+    animation: fadeInBottom 0.5s linear forwards;
+    animation-delay: 5s;
+
+}
+
+
+.element1 {
+    opacity: 0;
+    position: absolute;
+    bottom: -150px;
+    right: 40%;
+    width: 300px;
+    height: 300px;
+    border: 30px solid #000;
+    animation: rotate 40s linear infinite, fadeIn 1s linear forwards;
+    animation-delay: 7s;
+}
+
+.element2 {
+    opacity: 0;
+    position: absolute;
+    left: -10px;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #C53B67;
+    animation: rotate 30s linear infinite, fadeIn 1s linear forwards;
+    animation-delay: 7s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(450deg);
+    }
+}
