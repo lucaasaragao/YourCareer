@@ -1,26 +1,9 @@
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
-    width: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 10%;
+    margin-right: 20px;
 }
 
-.container2 {
+.inferno {
     width: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-top:
-}
-
-.card {
-    width: 300px;
-    height: 350px;
+    height: auto;
 }
