@@ -23,6 +23,17 @@ header {
 
 }
 
+label {
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    line-height: 50px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
 .logo-container,
 .nav-links,
 .cart {
@@ -167,6 +178,11 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .nav-link {
+        font-size: 20px;
+    }
+
     .presentation {
         flex-direction: column;
     }
@@ -189,7 +205,7 @@ nav {
     }
 
     .cover img {
-        height: 80%;
+        height: 60%;
     }
 
     .small-circle,
@@ -199,8 +215,67 @@ nav {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 600px) {
+
+    .logo-container {
+        display: none;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+
+    #toggle:checked+nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 380px) {
     .nav-link {
-        font-size: 14px;
+        position: absolute;
+        width: 10px;
+    }
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    .introduction {
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .intro-text h2 {
+        font-size: 40px;
+    }
+
+    .intro-text p {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .cta {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .cover img {
+        height: 70%;
     }
 }
