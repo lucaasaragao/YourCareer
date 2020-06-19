@@ -216,7 +216,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .logo-container {
         display: none;
@@ -230,6 +230,7 @@ nav {
     nav {
         text-align: center;
         width: 100%;
+        margin: auto;
         display: none;
         background-color: #C53B67 !important;
     }
@@ -238,7 +239,22 @@ nav {
         display: block;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
-        
+    }
+    .intro-text h2 {
+        font-size: 40px;
+    }
+
+    .intro-text p {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .cta {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
     }
 
     #toggle:checked+nav {
@@ -247,9 +263,17 @@ nav {
 }
 
 @media screen and (max-width: 380px) {
-    .nav-link {
-        position: absolute;
-        width: 10px;
+    .nav-links {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        border-bottom: 1px solid #EAEAEB;
+    }
+
+    .nav-links a {
+        color: #EAEAEB;
     }
 
     .presentation {
@@ -262,7 +286,7 @@ nav {
     }
 
     .intro-text h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .intro-text p {
@@ -272,13 +296,13 @@ nav {
 
     .cta {
         position: absolute;
-        top: 30%;
+        top: 85%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%)
     }
 
     .cover img {
-        height: 70%;
+        height: 60%;
     }
 }
