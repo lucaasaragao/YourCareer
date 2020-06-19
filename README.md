@@ -2,7 +2,7 @@
 
 > Seu guia de profissões
 
-> Projeto pensado para estudantes ingressantes em qualquer curso de TI
+> Projeto pensado para ajudar estudantes ingressantes em qualquer curso de TI a conhecer as profissões no mercado
 
 **Tecnologias Usadas**
 
