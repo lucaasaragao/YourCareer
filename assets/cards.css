@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 .container{
-    background-color: brown;
+    
+}
+
+h4{
+    font-family: 'Sriracha', cursive;
 }
 
 .container-2{
@@ -12,8 +16,7 @@
     flex-wrap: wrap;
     height: auto;
     margin: auto;
-
-    background-color: aquamarine;
+    margin-top: 20px;
 }
 .card{
     width: 400px;
