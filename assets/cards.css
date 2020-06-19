@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     flex-wrap: wrap;
     height: auto;
     margin: auto;
@@ -16,6 +16,8 @@
     background-color: aquamarine;
 }
 .card{
+    margin-top: 20px;
+    margin-left: 5px;
     width: 400px;
     height: 300px;
 }
