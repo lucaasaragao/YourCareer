@@ -118,6 +118,10 @@ nav {
     font-size: 16px;
 }
 
+.cta-select:hover{
+    background-color:  #e0dede;
+}
+
 .cta-add {
     background: #C53B67;
     /*mudar cores dos butões*/
@@ -128,7 +132,10 @@ nav {
     font-size: 16px;
     color: white;
     margin: 30px 0px 0px 20px;
+}
 
+.cta-add:hover{
+    background-color:  #973254;
 }
 
 .cover {
