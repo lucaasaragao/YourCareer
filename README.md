@@ -1,14 +1,42 @@
 # YouCareer
+>  Seu guia de profissões
 
-> Seu guia de profissões
+<h1 align="center">
+    <img src="" width="200px">
+</h1>
 
-> Projeto pensado para ajudar estudantes ingressantes em qualquer curso de TI a conhecer as profissões no mercado
+<h1 align="center">
+    <img src="" width="100%">
+</h1>
 
-**Tecnologias Usadas**
+---
 
-- Materialize
-- HTML 5
-- CSS 3
-- JS
+## 📑 Sobre
+Aplicação desenvolvida para ajudar estudantes ingressantes na area de TI
 
-> Status do Projeto: Em desenvolvimento :warning:
+---
+
+## 🚀 Tecnologias utilizadas
+
+- [JS]()
+- [HTML 5]()
+- [Materialize]()
+- [CSS 3]()
+----
+
+## 🤔 Como contribuir
+
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
+---
+## Status do Projeto
+- Incompleto 😥 
+
+---
+### Desenvolvido por:
+
+Lucas Aragão 😎 
+
+
