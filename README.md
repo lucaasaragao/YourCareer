@@ -6,8 +6,12 @@
 </h1>
 
 <h1 align="center">
-    <img src="" width="100%">
+    <img src="https://github.com/lucaasaragao/YourCareer/blob/master/public/01.PNG" width="100%">
 </h1>
+
+<h2 align="center">
+    <img src="https://github.com/lucaasaragao/YourCareer/blob/master/public/02.PNG" width="100%">
+</h2>
 
 ---
 
