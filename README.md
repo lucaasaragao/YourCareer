@@ -1,10 +1,10 @@
 # YouCareer
->  Seu guia de profissões
-
+##  Seu guia de profissões
+<!--
 <h1 align="center">
     <img src="" width="200px">
 </h1>
-
+-->
 <h1 align="center">
     <img src="https://github.com/lucaasaragao/YourCareer/blob/master/public/01.PNG" width="100%">
 </h1>
