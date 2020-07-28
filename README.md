@@ -16,7 +16,8 @@
 ---
 
 ## 📑 Sobre
-Aplicação desenvolvida para ajudar estudantes ingressantes na area de TI
+Aplicação desenvolvida para ajudar estudantes ingressantes na area de TI a escolher a especialidade que deseja estudar. O objetivo principal desse projeto
+é facilitar o conhecimento do aluno ingressante aos conteúdos da área que mais se identifica.
 
 ---
 
@@ -26,6 +27,7 @@ Aplicação desenvolvida para ajudar estudantes ingressantes na area de TI
 - [HTML 5]()
 - [Materialize]()
 - [CSS 3]()
+- [Node]()
 ----
 
 ## 🤔 Como contribuir
@@ -36,7 +38,7 @@ Aplicação desenvolvida para ajudar estudantes ingressantes na area de TI
 - Faça push para a sua branch: `git push origin minha-feature`.
 ---
 ## Status do Projeto
-- Incompleto 😥 
+- Em desenvolvimento 🕒 
 
 ---
 ### Desenvolvido por:
