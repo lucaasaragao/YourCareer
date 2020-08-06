@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-.container{
-    
-}
+.container {}
 
-.logo-container img{
+.logo-container img {
     width: 80px;
     height: 80px;
 }
 
-h4{
+h4 {
     font-family: 'Sriracha', cursive;
 }
 
-.container-2{
+.container-2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +21,8 @@ h4{
     margin: auto;
     margin-top: 20px;
 }
-.card{
+
+.card {
     width: 400px;
     height: 320px;
 }
@@ -60,3 +59,14 @@ nav {
     font-size: 16px;
     text-decoration: none;
 }
+
+
+
+@media screen and (max-width: 800px) {
+    .nav-links a {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {}
